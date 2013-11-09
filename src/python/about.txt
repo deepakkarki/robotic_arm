@@ -1,0 +1,1 @@
+python code to communicate between the sensor(LeapMotion) and arduino on the arm via bluetooth. Uses the LeapMotion API and pybluez for bluetooth.
