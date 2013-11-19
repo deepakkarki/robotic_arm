@@ -21,7 +21,7 @@ sock.connect((addr, port))
 print 'connected'
 sock.send('1')
 print 'sent 1'
-time.sleep(3)
+time.sleep(10)
 sock.send('0')
 print 'sent 0'
 sock.close()
