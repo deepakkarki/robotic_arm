@@ -33,22 +33,9 @@ void loop() {
   {
     val = Serial.read();
     s1.write(val);
-    delay(1);
-    
-    val = Serial.read();
     s2.write(val);
-    delay(1);
-    
-    val = Serial.read();
     s3.write(val);
-    delay(1);
-    
-    val = Serial.read();
     s4.write(val);
-    delay(1);
-    
-    val = Serial.read();
     s5.write(val);
-    delay(1);
   }
 }
