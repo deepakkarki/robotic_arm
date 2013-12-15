@@ -6,12 +6,15 @@ print "Welcome to the Bluetooth Arm!! \n"
 
 while True:
 	try:
-		val = int(input("Enter a number between 0-180"))
+		val = int(input("Enter a number between 0-180 : "))
 		lval = [val]*5
-		myarm.write(laval)
+		myarm.write(lval)
 	except KeyboardInterrupt as e:
 		print "See you later! goodbye"
+		break
 		
 	except Exception as e:
+		print e
 		print "something wrong!! was it you input?"
 	
+myarm.disconnect()

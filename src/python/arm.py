@@ -30,12 +30,15 @@ class arm:
 	
 		self.conn = sock
 
-	def write(self,val):
-	'''
-	val is a list of int (in the range 0-255) to be written
-	'''
+	def write_all(self,vals):
+		'''
+		val is a list of int (in the range 0-255) to be written
+		'''
 		for val in vals:
 			self.conn.send(chr(val))
+	
+	def write(self,val):
+		self.conn.send(chr(val))
 	
 	def disconnect(self):
 		self.conn.close()
