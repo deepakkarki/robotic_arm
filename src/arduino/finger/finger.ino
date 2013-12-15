@@ -18,11 +18,11 @@ void setup()
   s4.attach(10); //ring
   s5.attach(5); //little
   //attach the servo object at port 9
-  s1.write(0);
-  s2.write(0);
-  s3.write(0);
-  s4.write(0);
-  s5.write(0);
+  s1.write(180);
+  s2.write(180);
+  s3.write(180);
+  s4.write(180);
+  s5.write(180);
 }
 
 void loop() {
